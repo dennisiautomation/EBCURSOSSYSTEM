@@ -1,0 +1,27 @@
+# Arquivos e pastas específicos do PHP
+vendor/
+composer.lock
+
+# Arquivos de configuração que podem conter senhas
+.env
+config/*.ini
+
+# Arquivos e pastas específicos do sistema
+.DS_Store
+Thumbs.db
+
+# Diretórios de logs e cache
+/logs/
+/cache/
+*.log
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+
+# Arquivos de configuração do IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

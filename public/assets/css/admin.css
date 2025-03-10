@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --background-light: #ecf0f1;
+  --sidebar-width: 250px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: var(--background-light);
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.logo {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: var(--secondary-color);
+}
+
+.content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.user-info {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+}
+
+.card .number {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.recent-activity {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recent-activity h2 {
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+}
+
+.activity-list {
+  color: var(--text-color);
+}
